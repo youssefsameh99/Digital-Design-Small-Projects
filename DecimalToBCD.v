@@ -1,3 +1,16 @@
+//------------------------------------------------------------------------------
+// Module Name: DecimaltoBCD
+// Description: This module converts a one-hot encoded decimal digit input
+//              (D0 to D9) into its corresponding 4-bit Binary Coded Decimal (BCD)
+//              output (Y3 to Y0). Only one of the input lines D0–D9 should be high
+//              at a time to represent the decimal digits 0 to 9.
+//
+// Inputs:
+//   D0 to D9 - One-hot encoded decimal digit inputs (only one should be '1')
+// Outputs:
+//   Y3 to Y0 - 4-bit BCD representation of the active decimal input
+//------------------------------------------------------------------------------
+
 module DecimaltoBCD(
     input D0,D1,D2,D3,D4,D5,D6,D7,D8,D9,
     output reg Y0,Y1,Y2,Y3
