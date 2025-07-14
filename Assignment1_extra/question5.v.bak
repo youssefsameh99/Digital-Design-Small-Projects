@@ -1,0 +1,25 @@
+module question5(
+    input A,B,Ainvert,Binvert,carryin,
+    input [1:0] operation,
+    output result,carryout
+);
+
+wire out_mux1, out_mux2, out_and , out_or, out_addition;
+
+assign out_mux1 = (Ainvert == 0 ) ? A : ~A;
+assign out_mux2 = (Binvert == 0 ) ? B : ~B;
+assign out_and = out_mux1 & out_mux2;
+assign out_or = out_mux1 | out_mux2;
+assign {carryout,out_addition} = out_mux1 + out_mux2 + carryin;
+
+assign result = (operation == 2'b00 ) ? out_and :
+                (operation == 2'b01 ) ? out_or  :
+                (operation == 2'b10 ) ? out_addition ;
+
+
+
+
+
+
+
+endmodule
