@@ -1,0 +1,15 @@
+{C:/Users/Sameh Fawzy/Desktop/KareemWaseem/Assignment4/DFF.v} {1 {vlog -work work -vopt -stats=none {C:\Users\Sameh Fawzy\Desktop\KareemWaseem\Assignment4\DFF.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module D_FF
+
+Top level modules:
+	D_FF
+
+} {} {}} {C:/Users/Sameh Fawzy/Desktop/KareemWaseem/Assignment4/ALSU.v} {1 {vlog -work work -vopt -stats=none {C:\Users\Sameh Fawzy\Desktop\KareemWaseem\Assignment4\ALSU.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module ALSU
+
+Top level modules:
+	ALSU
+
+} {} {}}
